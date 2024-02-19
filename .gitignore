@@ -14,9 +14,6 @@ default_board.dat
 heatmap.dat
 virginmap.dat
 placemap.dat
-pxls.conf
-roles.conf
-palette.conf
 index*_cache.html
 TODO
 *-canvas-*/
