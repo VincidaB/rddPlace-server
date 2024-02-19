@@ -120,10 +120,13 @@ public class App {
             saveMapForce();
         }));
         
+        //get the environment variable PORT
+        String port = System.getenv("PORT");
         //print the server's port
-        System.out.println("Server is running on port " + config.getInt("server.port"));
 
-        server = new UndertowServer(config.getInt("server.port"));
+        System.out.println("Server is running on port " + port);
+
+        server = new UndertowServer(Integer.parseInt(port));
         server.start();
 
         new Timer().schedule(new TimerTask() {
